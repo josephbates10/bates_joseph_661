@@ -1,0 +1,98 @@
+---
+title: "ICT_LIS_661_Project_4"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Welcome to Project 3!
+
+Before moving on, please ensure that you have copied this file out of the GitHub repository where you found it and pasted it into a different folder before starting to make your own changes.
+
+> Under the headers below, I'll provide you with certain instructions, all of them formatted as blockquotes, like this paragraph is. Underneath each set of blockquoted instructions, you should write a response to any questions I ask and fill out any code chunks as I instruct you. At the very end of this document, I'll provide instructions for *knitting* and submitting the `.Rmd` to Canvas.
+
+## Project 3, Part 1: Your Text Data [6 points]
+
+> For this project, you will need to identify a text that contains a minimum of 5,000 words. This does not need to be a publicly available text, but please ensure that you can use the dataset legally and ethically. Store the data somewhere in your GitHub repository for this class.
+
+> In the code chunk below, please load the text into this document. (Keep in mind that you can—and may need to—load packages as part of this or any other code chunk). [2 points]
+
+```{r}
+
+```
+
+> Now that you've loaded the test, please tell me some about it. Does it have a title? If not, what title would you give it? What reference or citation information (including a public URL, if applicable) can you provide about the text? Who created the text and when? How did they create it? What is your interest in it? [2 points]
+
+
+
+
+
+> As needed, perform any data cleaning (including "tidying") on the text in the code chunk below. [2 points]
+
+```{r}
+
+```
+
+
+## Project 3, Part 2: Word Count [6 points]
+
+> In the code chunk below, please display a full word count table of your text. [2 points]
+
+```{r}
+
+```
+
+> In the following code chunk, please display an abbreviated version of your word count table based on certain criteria (for example, only displaying words that appeared more than five times). [2 points]
+
+```{r}
+
+```
+
+> Below, please interpret your word count table. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. [2 points]
+
+
+
+
+
+## Project 3, Part 3: Sentiment Analysis [6 points]
+
+> In the code chunk below, conduct a sentiment analysis of your text. [2 points]
+
+```{r}
+
+```
+
+> In the code chunk below, report the most common positive and negative words in your text. [2 points]
+
+```{r}
+
+```
+
+> Below, please interpret your sentiment analysis. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. [2 points]
+
+
+
+
+## Project 3, Part 4: Text Data Visualization [2 points]
+
+> In the code chunk below, create at least one visualization related to your text. [2 points]
+
+```{r}
+
+```
+
+
+# Submitting Project 4
+
+After you've completed all parts of this assignment to your satisfaction, click on the `Knit` button in the toolbar at the top of this pane. When/if prompted, please indicate that you wish to knit to an HTML file. Knitting to PDF or Word are fancy tricks but take some more setting up, and that's beyond the scope of this class. 
+
+After RStudio has finished knitting the file, it will bring it up in a special RStudio interface. You can use this interface to review the document and make sure that everything appears as you want. Then, however, you should navigate to the same folder where you have stored this `.Rmd` file, and you will find a `.html` file with the same name in that same folder. You can open that file to view this in your browser; more importantly, this is the file that you should submit to Canvas to complete this assignment.
+
+I cannot accept any submission of your work besides the knit `.html` file! If you are having trouble knitting, please get in touch with me instead of submitting the `.Rmd` file and hoping it will work instead. It won't. I don't have your data, I won't see your output, and I can't grade your work without either of those.
+
+Speaking of having your data, though, it would be nice to have access to all the work you've done in addition to the `.html` file. Please open GitHub desktop, navigate to your repository for this class, *commit* the changes that you've made in completing this project, and *push* those changes to GitHub. I will also ask you to do this if you need any help along the way.

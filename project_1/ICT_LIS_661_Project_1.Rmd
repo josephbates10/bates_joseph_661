@@ -37,7 +37,7 @@ Before moving on, please make a copy of this file and renamed it in a way that m
 
 > Under the headers below, I'll provide you with certain instructions, all of them formatted as blockquotes, like this paragraph is. Underneath each set of blockquoted instructions, you should write a (non-blockquoted) response to any questions I ask. At the very end of this document, I'll provide instructions for *knitting* and submitting the `.Rmd` to Canvas.
 
-# Project 2, Part 1: Your Dataset [5 points]
+# Project 1, Part 1: Your Dataset [5 points]
 
 > For this project, you will need to identify a dataset with at least 100 observations and 5 variables. A dataset with at least 1,000 observations and 10 variables would be even better—but not necessary. This does not need to be a publicly available dataset, but please ensure that you can use the dataset legally and ethically. Store the data somewhere in your GitHub repository for this class.
 
@@ -49,12 +49,12 @@ Before moving on, please make a copy of this file and renamed it in a way that m
 
 
 
-# Project 2, Part 2: Reflect on Data Science [5 points]
+# Project 1, Part 2: Reflect on Data Science [5 points]
 
 > Think back to what we learned about in Module 2 of class. How does your dataset relate to the phenomena of data science and big data? For example, is this the kind of data that was easily collected and readily available 50 years ago? Or is there something "new and shiny" about this data? [5 points]
 
 
-# Project 2, Part 3: Reflect on Data Privacy and Ethics [5 points]
+# Project 1, Part 3: Reflect on Data Privacy and Ethics [5 points]
 
 > As we discussed in Module 3, data scientists typically assume that the world works in consistent, predictable ways and that the point of data science is to figure out how the world works so that we can get the outcomes we want. There's nothing inherently wrong with these assumptions—they have served us well over the past couple of centuries, and they continue to do so. However, it's important to consider their limitations. Think about your dataset and your research questions; are there ways that what you're interested in doesn't quite fit the data science view of the world? [2 points]
 
@@ -63,7 +63,7 @@ Before moving on, please make a copy of this file and renamed it in a way that m
 
 
 
-# Project 2, Part 4: Reflect on Open Data [5 points]
+# Project 1, Part 4: Reflect on Open Data [5 points]
 
 > Tell me about where you got your data from. How easy was it to find data that was of interest to you? What other kind of data did you find while looking for a dataset for this project? Could you have collected this data on your own if someone else hadn't done the work first? [2 points]
 

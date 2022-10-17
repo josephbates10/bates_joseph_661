@@ -38,7 +38,9 @@ Before moving on, please make a copy of this file and rename it in a way that ma
 > In the code chunk below, please load the dataset into this document. (Keep in mind that you can—and may need to—install and load packages as part of this or any other code chunk). [2 points]
 
 ```{r}
-World_Risk_Index <- read_csv("C:/Users/Joey Bates/Desktop/School/UK/3rd Semester/ICT661 Intro to Data Science/Wk4/World Risk Index.csv")
+library(tidyverse)
+library(here)
+World_Risk_Index <- read_csv(here("World Risk Index.csv"))
 View(World_Risk_Index)
 ```
 
@@ -96,7 +98,6 @@ World_Risk_Index %>%
 > Consider further questions that you have about the data and how visualization could help you answer those questions. In the code chunk below, pick one or more of the variables in your dataset and visualize them. Then, below the code chunk, describe what you were trying to learn about the data, what kind of plot you chose, why that plot is important for what you were trying to learn, and what the plot showed about the data. [4 points]
 
 ```{r}
-library(tidyverse)
 ggplot(data = World_Risk_Index) +
   geom_point(mapping = aes(x = Region, y = WRI))
 ```

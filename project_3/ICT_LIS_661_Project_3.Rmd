@@ -1,5 +1,5 @@
 ---
-title: "ICT_LIS_661_Project_4"
+title: "ICT_LIS_661_Project_3"
 output:
   html_document: default
   pdf_document: default
@@ -41,19 +41,14 @@ Before moving on, please ensure that you have copied this file out of the GitHub
 
 ## Project 3, Part 2: Word Count [6 points]
 
-> In the code chunk below, please display a full word count table of your text. [2 points]
+> In the code chunk below, please display a word count table listing the most common words in your text. [3 points]
 
 ```{r}
 
 ```
 
-> In the following code chunk, please display an abbreviated version of your word count table based on certain criteria (for example, only displaying words that appeared more than five times). [2 points]
 
-```{r}
-
-```
-
-> Below, please interpret your word count table. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. [2 points]
+> Below, please interpret your word count table. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. [3 points]
 
 
 
@@ -61,19 +56,27 @@ Before moving on, please ensure that you have copied this file out of the GitHub
 
 ## Project 3, Part 3: Sentiment Analysis [6 points]
 
-> In the code chunk below, conduct a sentiment analysis of your text. [2 points]
+> In the code chunk below, prepare your text for sentiment analysis. [1 point]
 
 ```{r}
 
 ```
 
-> In the code chunk below, report the most common positive and negative words in your text. [2 points]
+> In the code chunk below, display the most common positive words in your text. [1 points]
 
 ```{r}
 
 ```
 
-> Below, please interpret your sentiment analysis. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. [2 points]
+> In the code chunk below, display the most common negative words in your text. [1 points]
+
+```{r}
+
+```
+
+
+
+> Below, please interpret your sentiment analysis. As part of your interpretation, make sure to include any implications of your findings for an analysis of the text. [3 points]
 
 
 
@@ -87,7 +90,7 @@ Before moving on, please ensure that you have copied this file out of the GitHub
 ```
 
 
-# Submitting Project 4
+# Submitting Project 3
 
 After you've completed all parts of this assignment to your satisfaction, click on the `Knit` button in the toolbar at the top of this pane. When/if prompted, please indicate that you wish to knit to an HTML file. Knitting to PDF or Word are fancy tricks but take some more setting up, and that's beyond the scope of this class. 
 

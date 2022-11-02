@@ -38,21 +38,24 @@ Before moving on, please make a copy of this file and rename it in a way that ma
 > In the code chunk below, please load the dataset into this document. (Keep in mind that you can—and may need to—install and load packages as part of this or any other code chunk). [2 points]
 
 ```{r}
-
+World_Risk_Index <- read_csv("C:/Users/Joey Bates/Desktop/School/UK/3rd Semester/ICT661 Intro to Data Science/Wk4/World Risk Index.csv")
+View(World_Risk_Index)
 ```
 
 > Now that you've loaded the dataset, please tell me some about it. Does it have a title? If not, what title would you give it? What reference or citation information (including a public URL, if applicable) can you provide about the dataset? Who created the dataset and when? How did they create it? [2 points]
 
-
+The data set provided (World_Risk_Index) was derived from the website Kaggle. The World Risk Report is an annual technical report on global disaster risks and identifies the risk of an extreme natural event becoming a disaster for numerous countries worldwide.
+Tyagi, M. (2022, September 7). World disaster risk dataset. Kaggle. Retrieved October 13, 2022, from https://www.kaggle.com/datasets/tr1gg3rtrash/global-disaster-risk-index-time-series-dataset 
+According to the Kaggle website the originator of this risk index was Mrinal Tyagi, who finalized the assessment September 7th, 2022. The World Risk Index uses 27 aggregated, publicly available indicators to determine disaster risk for 181 countries worldwide. Conceptually, the index is composed of exposure to extreme natural hazards and the societal vulnerability of individual countries. Earthquakes, cyclones, floods, droughts, and climate-induced sea-level rise are considered in the exposure analysis. Societal vulnerability is divided into susceptibility to extreme natural events, lack of coping capacities, and lack of adaptive capacities. All index components are scaled to the value range from 0 to 100. The higher a country's index score on the World Risk Index, the higher its national disaster risk.
 
 > What is your interest in this dataset? In general terms, what would you like to know about it? More specifically, what are some possible research questions that you could ask? [2 points]
 
-
+My undergraduate degree is in Homeland Security, and I have spent substantial amount of my career in emergency management roles which has sparked my interest in predictive analysis in an emergency management index. I would also like to know if there are indicators within the data that predict disaster susceptibility which can be used by NGO organizations like US AID to allocate resources appropriately. The two Research Questions (RQs) that I would as are: 1) What top five countries are more susceptible and vulnerable to natural disasters? 2)  What regions of the world have a higher disaster exposure score?
 
 > As needed, perform any data cleaning (including "tidying") on the text in the code chunk below. [2 points]
 
 ```{r}
-
+World_Risk_Index %>% arrange(Year, Region)
 ```
 
 ## Project 2, Part 2: Descriptive Statistics [12 points]
@@ -60,35 +63,43 @@ Before moving on, please make a copy of this file and rename it in a way that ma
 > In the code chunk below, write code to determine the number of observations in the dataset. As is typical for R, there are a number of ways to do this—*how* you do so is less important than *that* you do so. [2 points]
 
 ```{r}
-
+World_Risk_Index %>%
+  group_by(Region) %>%
+  tally()
 ```
 
 > In the code chunk below, write code to list the variables included in the dataset. Then, below the code chunk, list and explain 5-10 of the most important quantitative variables. (The quantitative part will become important in the next step!) [3 points]
 
 ```{r}
-
+str(World_Risk_Index)
 ```
 
-
-
-
-
-
-
-
+The following quantitative variables are important to the World Risk Index study. 
+1) World Risk Index (WRI): This variable illustrates the risk index that has been applied to each region listed, and quantitatively where it falls in relation to other countries around the world. 
+2) Exposure: This variable depicts the quantifiable exposure score that each country has assigned to it as it relates to natural disasters. 
+3) Vulnerability: This variable depicts the quantifiable Vulnerability score that each country has assigned to it as it relates to natural disasters. 
+4) Susceptibility: This variable depicts the quantifiable Susceptibility score that each country has assigned to it as it relates to natural disasters.
+5) Lack of Coping Capabilities: This variable communicates the quantifiable identifier that has been assigned to a country's ability to cope during a natural disaster.
+6) Lack of Adaptive Capacities: This variable communicates the quantifiable identifier that has been assigned to a country's ability to adapt during a natural disaster.
 
 > In the code chunk below, calculate descriptive statistics (including mean, median, variance, and standard deviation) for each of the variables you listed above. Then, below the code chunk, describe what those descriptive statistics tell you about those variables. [3 points]
 
 ```{r}
-
+World_Risk_Index %>%
+  group_by(Region) %>%
+  summarize_at(vars(WRI, Exposure, Vulnerability, Susceptibility, `Lack of Coping Capabilities`, `Lack of Adaptive Capacities`, Year), list(~mean(.), ~median(.)))
 ```
 
 > Consider further questions that you have about the data and how visualization could help you answer those questions. In the code chunk below, pick one or more of the variables in your dataset and visualize them. Then, below the code chunk, describe what you were trying to learn about the data, what kind of plot you chose, why that plot is important for what you were trying to learn, and what the plot showed about the data. [4 points]
 
 ```{r}
-
+ggplot(data = WRI) + 
+  geom_point(mapping = aes(x = Region, y = Exposure), color = "blue")
 ```
-
+What you are trying to learn about the data? 
+What kind of plot you chose?
+Why that plot is important to what you are trying to learn? 
+What did the plot show about the data? 
 
 # Submitting Project 2
 
